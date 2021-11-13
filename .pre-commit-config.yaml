@@ -18,6 +18,7 @@ repos:
     rev: 4.0.1
     hooks:
     - id: flake8
+      args: ['--config=setup.cfg']
 
 -   repo: https://github.com/timothycrosley/isort
     rev: 5.10.1
