@@ -11,3 +11,6 @@ Inside this environment install the pre-commit hooks with:
 With every commit python code style will now be enforced.
 The commit hooks may be skipped by running:
 `git commit --no-verify`
+
+Run all tests locally with
+`tox`
