@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 pre-commit = "*"
+black = "*"
+isort = "*"
+mypy = "*"
+flake8 = "*"
 
 [dev-packages]
 
