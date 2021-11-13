@@ -9,6 +9,7 @@ black = "*"
 isort = "*"
 mypy = "*"
 flake8 = "*"
+merchant = {editable = true, path = "."}
 
 [dev-packages]
 
