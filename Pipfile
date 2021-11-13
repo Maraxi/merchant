@@ -10,6 +10,9 @@ isort = "*"
 mypy = "*"
 flake8 = "*"
 merchant = {editable = true, path = "."}
+tox = "*"
+pytest = "*"
+pytest-cov = "*"
 
 [dev-packages]
 
