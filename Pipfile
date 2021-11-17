@@ -13,6 +13,7 @@ merchant = {editable = true, path = "."}
 tox = "*"
 pytest = "*"
 pytest-cov = "*"
+pydocstyle = "*"
 
 [dev-packages]
 
