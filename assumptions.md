@@ -2,16 +2,16 @@
 
 ## General
 
+- There is exactly one query per line
 - All words are case insensitive
-- Different numbers have different names
 - Multiple names may refer to the same number
 - A number-word may be reassigned to a different letter, overwriting the old letter
 - Numbers and materials are a single word each
 - There may be multiple currencies
 - Different currencies do not have a fixed exchange rate since they might assign different values to materials (e.g: 1 *gold* is worth 2 *shiny-rocks* or 5 *coins*; if *copper* is worth 4 *shiny-rocks* we can not infer the price of *copper* in *coins*)
 - The price of a material may be updated by specifying the new exchange rate
-- The statement *[material] is [number] [currency]* is missing the material count and therefore defines the price for a single unit of that material
-- The query *how many [currency] is [material] ?* is missing count and therefore returns the price for a single unit of material
+- In the statement *[material] is [number] [currency]* the material count is omitted and is therefore assumed to be 1
+- In the query *how many [currency] is [material] ?* the count is omitted and is therefore assumed to be 1
 
 
 ## Input formating
