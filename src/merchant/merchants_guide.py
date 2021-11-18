@@ -97,19 +97,17 @@ class Guide:
         """
         words = line.split(" ")
         try:
-            if len(words) == 3:
-                self._parse_number_definition(words)
-                return None
-            elif words[-1] == "?":
-                # query
-                assert words.count("is") == 1
-                index = words.index("is")
-                if index == 2 and line.lower().startswith("how much is "):
+            if words[-1] == "?":
+                if line.lower().startswith("how much is "):
                     return self._parse_number_query(words)
                 else:
                     return self._parse_price_query(words)
             else:
-                self._parse_price_definition(words)
-                return None
+                if len(words) == 3:
+                    self._parse_number_definition(words)
+                    return None
+                else:
+                    self._parse_price_definition(words)
+                    return None
         except (AssertionError, KeyError, ValueError):
             return "I have no idea what you are talking about"
