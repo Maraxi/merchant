@@ -18,4 +18,5 @@ The program may also be run with a prepared message file by specifying it on the
 ## Further information
 
 Extra information about the program can be found in `assumptions.md`.
+
 Information for settings up the development environment can be found in `development.md`.
