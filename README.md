@@ -1,6 +1,8 @@
-# merchant
+# Merchant
 
 ![Tests](https://github.com/Maraxi/merchant/actions/workflows/tests.yml/badge.svg)
+
+A program to handle the conversion of numbers and units for intergalactic transactions.
 
 ## Running the module
 
