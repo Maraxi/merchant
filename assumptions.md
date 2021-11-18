@@ -5,6 +5,7 @@
 - All words are case insensitive
 - Different numbers have different names
 - Multiple names may refer to the same number
+- A number-word may be reassigned to a different letter, overwriting the old letter
 - Numbers and materials are a single word each
 - There may be multiple currencies
 - Different currencies do not have a fixed exchange rate since they might assign different values to materials (e.g: 1 *gold* is worth 2 *shiny-rocks* or 5 *coins*; if *copper* is worth 4 *shiny-rocks* we can not infer the price of *copper* in *coins*)
@@ -39,5 +40,5 @@ The input complies with the following extended Backus-Naur form
 <digit>             = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 ```
 
-Using this syntax we can distinguish the 3 types of `query` lines easily.
-Only `question`s end with the symbol `?`; All other querys contain either exactly 3 `word`s if they are a `number defintion` or more words if they are a `price-definition`.
+Using this syntax we can distinguish the 4 types of `query` lines easily.
+Only `question`s end with the symbol `?`; `number-question` and `price-question` can be distinguished by the second word in the query. Definitions for numbers are 3 words long while those for prices contain at least 4 words.
