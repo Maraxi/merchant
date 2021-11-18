@@ -161,7 +161,6 @@ def test_parse_price_query(guide_with_prices, test_input, expected_output, expec
         assert guide_with_prices._parse_price_query(test_input) == expected_output
 
 
-@pytest.mark.xfail()
 def test_input():
     """Run a full test."""
     p = subprocess.run(
