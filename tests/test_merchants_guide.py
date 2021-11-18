@@ -1,5 +1,6 @@
 """Tester for the merchants guide to the galaxy."""
 import subprocess
+import sys
 from contextlib import contextmanager
 
 import pytest
@@ -163,6 +164,8 @@ def test_parse_price_query(guide_with_prices, test_input, expected_output, expec
 
 def test_input():
     """Run a full test."""
+    if sys.platform != "linux":
+        return
     p = subprocess.run(
         ["python", "-m", "merchant", "tests/samples/input1.txt"],
         capture_output=True,
