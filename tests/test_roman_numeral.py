@@ -40,7 +40,7 @@ def test_valid_input(test_input, expected_value):
     ),
 )
 def test_unknown_input(test_input):
-    """Test invalid inputs such as lower case and undefined letters aswell as numbers and symbols."""
+    """Test invalid inputs such as lower case and undefined letters as well as numbers and symbols."""
     with pytest.raises(ValueError):
         roman_numeral.convert(test_input)
 
@@ -77,6 +77,6 @@ def test_invalid_ordering(test_input):
     ),
 )
 def test_invalid_letter_count(test_input):
-    """Test numerals with too many occurances of single letters."""
+    """Test numerals with too many occurrences of single letters."""
     with pytest.raises(ValueError):
         roman_numeral.convert(test_input)

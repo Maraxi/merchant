@@ -12,7 +12,7 @@ class Guide:
     def __init__(self):
         """Set up empty dictionaries for information storage."""
         self.numbers: dict[str, str] = {}
-        # self.prices assigns to each tupple (material,currency) a price in units of currency per material
+        # self.prices assigns to each tuple (material,currency) a price in units of currency per material
         self.prices: dict[tuple[str, str], float] = {}
 
     def _list_to_number(self, words: list[str], empty_list_is_one: bool = False) -> int:

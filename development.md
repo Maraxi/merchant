@@ -20,4 +20,4 @@ The unit tests are excluded from pre-commmit hooks but can be run with
 Run all tests locally with
 `tox`
 
-Tox is also automaticly run as a github action on different operating systems after every push.
+Tox is also automatically run as a github action on different operating systems after every push.

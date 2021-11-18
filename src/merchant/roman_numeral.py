@@ -16,7 +16,7 @@ LETTERS: Final = (
 """Compiled regular expressions to find the end of thousands, hundreds, tens and units sections of a roman numeral.
 
 Thousands contains only `M` so the first other letter or end of line marks the end of the thousands block.
-Other blocks work the same except for the different admissable letters.
+Other blocks work the same except for the different admissible letters.
 """
 BOUNDARY_FINDER: Final = (
     re.compile(r"[^M]|$"),

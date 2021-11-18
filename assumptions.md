@@ -14,7 +14,7 @@
 - In the query *how many [currency] is [material] ?* the count is omitted and is therefore assumed to be 1
 
 
-## Input formating
+## Input formatting
 
 The input complies with the following extended Backus-Naur form
 
@@ -41,4 +41,4 @@ The input complies with the following extended Backus-Naur form
 ```
 
 Using this syntax we can distinguish the 4 types of `query` lines easily.
-Only `question`s end with the symbol `?`; `number-question` and `price-question` can be distinguished by the second word in the query. Definitions for numbers are 3 words long while those for prices contain at least 4 words.
+Only `questions` end with the symbol `?`; `number-question` and `price-question` can be distinguished by their start: *how much* vs *how many*. On the other hand `number definitions` contain exactly 3 words whereas `price definitions` contain at least 4 words.
