@@ -25,7 +25,7 @@ class Guide:
         """
         if empty_list_is_one and len(words) == 0:
             return 1
-        letters = map(self.numbers.__getitem__, words)
+        letters = map(self.numbers.__getitem__, [w.lower() for w in words])
         return roman_numeral.convert("".join(letters))
 
     def _parse_number_definition(self, words: list[str]) -> None:
@@ -37,7 +37,7 @@ class Guide:
         assert words[1] == "is"
         assert len(words[2]) == 1
         assert words[2] in "IVXLCDMivxlcdm"
-        self.numbers[words[0]] = words[2].upper()
+        self.numbers[words[0].lower()] = words[2].upper()
         return None
 
     def _parse_price_definition(self, words: list[str]) -> None:

@@ -113,12 +113,12 @@ def test_parse_price_definition(guide, test_input, expectation):
         (["how", "much", "is", "?"], "is 0", does_not_raise()),
         (["how", "much", "is", "foo", "?"], "is 50", does_not_raise()),
         (
-            ["how", "much", "is", "Glob", "Glob", "gLOB", "i", "?"],
+            ["how", "much", "is", "Glob", "barb", "?"],
             "is 3001",
             pytest.raises(KeyError),
         ),
         (
-            ["how", "much", "is", "Glob", "Glob", "Glob", "i", "?"],
+            ["how", "much", "is", "GLOB", "glob", "Glob", "i", "?"],
             "is 3001",
             does_not_raise(),
         ),
